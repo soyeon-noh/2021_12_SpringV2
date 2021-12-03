@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="rootPath" value="${pageContext.request.contextPath}"/>
+<form class="form" id="todoInput" method="post">
+	<div class="image_wrapper">
+		<img id="to_image_thumnail"
+			src="${rootPath}/static/images/noImage.png" 
+			width="30px">
+	</div>
+	<input placeholder="TODO">
+	<div class="insert-button">추가</div>
+	<input accept="image/*" 
+			type="file" 
+			id="imgTag" 
+			name="to_image" />
+	
+</form>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+	document.querySelector("div.image_wrapper")
+		.addEventListener("click", function(){
+			document.querySelector("input#imgTag").click()
+		})
+	// input type=file tag를 클릭하고 fileOpenDialog 가 뜨고
+	// 파일을 선택한 후 open 을 누른 후의 event = load
+	const imgTag = document.querySelector("input#imgTag")
+	if(imgTag){
+		imgTag.addEventListener("load", function(){
+			const fileList = imgTag.files
+			const file0 = fileList[0]
+			alert(file0.name)
+		})
+	}
+	
+	document.querySelector("input#imgTag")
+		.addEventListener("change", function(){
+			
+		})
+})
+</script>

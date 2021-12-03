@@ -1,0 +1,8 @@
+package com.callor.todo.config;
+
+public class QualifierConfig {
+
+	public static class SERVICE {
+		
+	}
+}

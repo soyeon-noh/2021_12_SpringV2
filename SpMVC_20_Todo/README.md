@@ -34,3 +34,19 @@ background 에서 HTTP 프로토콜에 파일을 업로드 하는 기능이 첨�
 
 ## 여러개의 파일을 선택 업로드하기
 * multiple="multiple" 속성을 추가하면 여러개 파일을 선택할 수 있다.
+
+
+
+## bean 등에서 물리적 파일에 접근하기 위한 방법
+* http://localhost:8080
+* https://www.naver.com
+	=> http:// 는 프로토콜이다
+* file:///c:/users/my.txt
+	=> file:// 는 물리적 파일에 접속하기 위한 프로토콜이다.
+	=> /c:/users 맨앞에 /는 운영체제 호환성때문이다
+	=> 파일열기 프로토콜을 사용하여 
+		로컬디스크 C 드라이브의 /users/ 폴더에 있는 my.txt 파일에 접근하라
+* 리눅스나 mac에서는 바로 /Users로 시작한다.
+
+
+

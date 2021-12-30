@@ -6,8 +6,16 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="파일"/>
+		<item key="selection" value="취급하기"/>
 		<list key="findhistory">
+			<item value="취급하기"/>
+			<item value="감자칩"/>
+			<item value="이미지"/>
+			<item value="클래스"/>
+			<item value="클ㄹ스"/>
+			<item value="추가"/>
+			<item value="2021"/>
+			<item value="현재"/>
 			<item value="파일"/>
 			<item value="c:"/>
 			<item value="td"/>
